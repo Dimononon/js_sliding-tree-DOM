@@ -18,6 +18,8 @@ tree.addEventListener('click', (e) => {
   if (e.target.tagName === 'SPAN') {
     const ul = e.target.nextElementSibling;
 
-    ul.hidden = !ul.hidden;
+    if (ul) {
+      ul.hidden = !ul.hidden;
+    }
   }
 });
